@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gurbir Singh Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f4f4;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo h2{
+font-size:30px;
+}
+
+.logo p{
+font-size:12px;
+color:#ccc;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:14px;
+text-transform:uppercase;
+}
+
+nav ul li a:hover{
+color:#3498db;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://static.vecteezy.com/system/resources/thumbnails/032/485/908/small_2x/background-illustration-with-light-and-shadow-for-products-free-photo.jpg');
+background-size:cover;
+background-position:center;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+background:#3498db;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#217dbb;
+}
+
+section{
+padding:80px 50px;
+background:white;
+margin-bottom:5px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.about img{
+width:350px;
+border-radius:10px;
+}
+
+.about-content{
+flex:1;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f8f8f8;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill p{
+margin-bottom:8px;
+}
+
+.progress{
+background:#ddd;
+height:20px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:#3498db;
+}
+
+.timeline{
+list-style:none;
+}
+
+.timeline li{
+padding:15px;
+background:#f8f8f8;
+margin-bottom:10px;
+border-left:5px solid #3498db;
+}
+
+.blog-post{
+background:#f8f8f8;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#3498db;
+color:white;
+padding:12px;
+border:none;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:15px;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.about{
+text-align:center;
+justify-content:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<h2>Gurbir Singh</h2>
+<p>Professional Portfolio Website</p>
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Gurbir Singh</h1>
+<p>Professional Web Developer & Designer</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<img src="IMG_6753.jpeg">
+
+<div class="about-content">
+<br>
+<p>
+I am a passionate Web Developer with expertise in HTML, CSS,
+JavaScript and modern web technologies. I create attractive,
+responsive and user-friendly websites.
+</p>
+
+<br>
+
+<a href="#" class="btn">Download Resume</a>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skill">
+<p>HTML 95%</p>
+<div class="progress">
+<span style="width:95%"></span>
+</div>
+</div>
+
+<div class="skill">
+<p>CSS 90%</p>
+<div class="progress">
+<span style="width:90%"></span>
+</div>
+</div>
+
+<div class="skill">
+<p>JavaScript 75%</p>
+<div class="progress">
+<span style="width:85%"></span>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Calculator Website</h3>
+<p>
+A responsive calculator built using HTML, CSS, and JavaScript with a clean and modern user interface.
+</p>
+</div>
+
+<div class="card">
+<h3>Personal Portfolio</h3>
+<p>
+A responsive portfolio website showcasing my skills, education, and projects with smooth navigation.
+</p>
+</div>
+
+<div class="card">
+<h3>Landing Page</h3>
+<p>
+A modern and responsive landing page designed using HTML and CSS with attractive layouts and animations.
+</p>
+</div>
+
+</div>
+</section>
+<section id="blog">
+<h2 class="section-title">Blog</h2>
+
+<div class="blog-post">
+<h3>Latest Web Design Trends</h3>
+<p>Explore modern web technologies and designs.</p>
+</div>
+
+<div class="blog-post">
+<h3>Why Responsive Design Matters</h3>
+<p>Learn how mobile-first websites improve user experience.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Me</h2>
+
+<form onsubmit="sendMessage(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Gurbir Singh. All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendMessage(event){
+event.preventDefault();
+alert("Thank you! Your message has been sent successfully.");
+}
+</script>
+
+</body>
+</html>
