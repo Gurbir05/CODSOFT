@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2>Online Quiz Maker</h2>
+
+    <div class="nav-links">
+        <button id="homeBtn">Home</button>
+        <button id="createBtn">Create Quiz</button>
+        <button id="listBtn">Quiz List</button>
+        <button id="takeBtn">Take Quiz</button>
+    </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="page active">
+
+    <div class="hero">
+
+        <h1>Welcome to Online Quiz Maker</h1>
+
+        <p>
+            Create your own quizzes or challenge yourself by taking quizzes.
+        </p>
+
+        <button id="startQuiz">
+            Start Quiz
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Create Quiz -->
+<section id="create" class="page">
+
+<h2>Create New Quiz</h2>
+
+<div class="form">
+
+<input
+type="text"
+id="question"
+placeholder="Enter Question">
+
+<input
+type="text"
+id="option1"
+placeholder="Option A">
+
+<input
+type="text"
+id="option2"
+placeholder="Option B">
+
+<input
+type="text"
+id="option3"
+placeholder="Option C">
+
+<input
+type="text"
+id="option4"
+placeholder="Option D">
+
+<select id="correct">
+
+<option value="">Correct Answer</option>
+<option value="0">Option A</option>
+<option value="1">Option B</option>
+<option value="2">Option C</option>
+<option value="3">Option D</option>
+
+</select>
+
+<button id="addQuestion">
+Add Question
+</button>
+
+</div>
+
+<h3 id="questionCount">
+Questions Added : 0
+</h3>
+
+</section>
+
+<!-- Quiz List -->
+<section id="list" class="page">
+
+<h2>Available Questions</h2>
+
+<div id="quizList"></div>
+
+</section>
+
+<!-- Take Quiz -->
+<section id="quiz" class="page">
+
+<div class="quiz-box">
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<h2 id="qNumber"></h2>
+
+<h3 id="quizQuestion"></h3>
+
+<div id="answers"></div>
+
+<button id="nextBtn">
+Next Question
+</button>
+
+</div>
+
+</section>
+
+<!-- Result -->
+<section id="result" class="page">
+
+<div class="result-box">
+
+<h1>Quiz Finished 🎉</h1>
+
+<h2 id="score"></h2>
+
+<div id="correctAnswers"></div>
+
+<button id="restart">
+
+Restart Quiz
+
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
